@@ -1,0 +1,10 @@
+1. Sukurkite stateless klasę StringUtils su statiniais metodais įprastoms eilutės operacijoms atlikti: to_uppercase, to_lowercase ir reverse_string.
+2. Sukurkite statefull klasę Skaitiklis, kuri saugoja skaičių. Joje turėtų būti metodai, skirti skaičiui padidinti, sumažinti, atstatyti ir dabartiniam skaičiui gauti.
+3. Sukurkite klasę Timer, kuri gali paleisti, sustabdyti ir iš naujo nustatyti laikmatį bei nurodyti praėjusį laiką sekundėmis. Naudokite time python paketą.
+4. Sukurkite klasę DateUtils su statiniais metodais, kad apskaičiuotumėte dienų skaičių tarp dviejų datų ir patikrintumėte, ar tam tikri metai yra keliamieji metai. Naudokite python paketą datetime.
+5. Sukurkite klasę ShoppingCart, kuriame būtų prekių sąrašas. Joje turėtų būti metodai: pridėti prekes, pašalinti prekes, peržiūrėti krepšelį ir apskaičiuoti bendrą kainą.
+6. Sukurkite klasę UserSession, kuri valdo vartotojo prisijungimo būseną. Joje turėtų būti būdai prisijungti, atsijungti, patikrinti, ar vartotojas yra prisijungęs, ir gauti prisijungusio vartotojo duomenis.
+7. Sukurkite klasę Order (užsakymas), kuriame būtų saugoma užsakymo informacija (prekės, kiekiai, kainos). Įdiekite prekių pridėjimo, pašalinimo, bendros kainos apskaičiavimo ir nuolaidų taikymo metodus.
+8. Sukurkite klasę DataTransformer su statiniais metodais, kad atliktumėte duomenų transformavimo operacijas: skaičių sąrašo normalizavimą, eilučių kodavimą/dekodavimą ir duomenų filtravimą pagal kriterijus.
+9. Sukurkite klasę „ReservationSystem“, kuri tvarko paslaugos (pvz., viešbučio kambarių, restorano stalų) rezervacijas. Įdiekite rezervacijų kūrimo, rezervacijų atšaukimo, prieinamumo tikrinimo ir visų rezervacijų peržiūros metodus.
+10. Sukurkite klasę FileUtils su statiniais metodais failo operacijoms atlikti: skaityti failą, rašyti į failą ir pridėti duomenų prie failo.
