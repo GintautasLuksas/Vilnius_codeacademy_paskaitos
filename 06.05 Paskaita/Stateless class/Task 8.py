@@ -26,9 +26,8 @@ class DataTransformer:
             decoded.append(new-2)
         return decoded
     @staticmethod
-    def filter(data):
-        filtered = sorted(data)
-        print(f'Numbers filtered: {filtered}.')
+    def filter(data, criteria):
+        return [x for x in data if criteria(x)]
 
 
 
