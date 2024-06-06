@@ -1,0 +1,28 @@
+1.
+1.1 Įdiekite paketą matplotlib.
+1.2 Sukurkite klasę pavadinimu DataVisualizer.
+1.3 Panaudokite metodą plot_data(x, y).
+1.4 Įdiekite metodą save_plot(failo pavadinimas), kad išsaugotumėte brėžinį faile.
+
+2.
+2.1 Įdiekite „zipfile“ paketą (yra „Python“).
+2.2 Sukurkite klasę pavadinimu FileCompressor.
+2.3 Implementuokite metodą compress(files, output_zip), kad suspaustumėte failų sąrašą į ZIP failą.
+2.4 Implementuokite metodą decompress(zip_file, output_dir), kad ištrauktumėte ZIP failo turinį.
+
+3.
+3.1 Įdiekite pandas paketą.
+3.2 Sukurkite klasę pavadinimu DataFrameHandler.
+3.3 Implementuokite metodą load_dataframe(file_path), kad įkeltumėte CSV failą į pandas DataFrame.
+3.4 Implementuokite metodus filter_data(condition) ir group_data(column), kad filtruotumėte ir sugrupuotumėte DataFrame.
+
+4.
+4.1 Įdiekite pickle pakeltą.
+4.2 Sukurkite klasę pavadinimu DataSerializer.
+4.3 Implementuokite metodus, kurie išsaugotų python objektą į .pkl formatą ir nuskaitytų iš jo.
+
+5.
+5.1 Įdiekite numpy paketą.
+5.2 Sukurkite klasę pavadinimu DataTransformer.
+5.3 Implementuokite metodus matematinėms operacijoms, transformacijoms ir pertvarkymui su NumPy.
+5.4 Transformuokite pavyzdinį duomenų rinkinį naudodami implementuotus metodus.
