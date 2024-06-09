@@ -6,5 +6,25 @@
 # kad ištrauktumėte ZIP failo turinį.
 
 import zipfile
+import zipfile
+import os
+
 class FileCompressor:
-    def compress(self, files, output_zip):
+    @staticmethod
+    def compress(files, output_zip):
+        with zipfile.ZipFile(output_zip, 'w') as zipf:
+            for file in files:
+                zipf.write(file, os.path.basename(file))
+
+    @staticmethod
+    def decompress(zip_file, output_dir):
+        with zipfile.ZipFile(zip_file, 'r') as zipf:
+            zipf.extractall(output_dir)
+
+
+FileCompressor.compress(["file1.txt", "file2.txt"], "compressed.zip")
+
+
+FileCompressor.decompress("compressed.zip", 'C:/Users/MrComputer/PycharmProjects/Vilnius_codeacademy_paskaitos/06.06')
+
+
