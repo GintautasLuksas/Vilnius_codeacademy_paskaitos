@@ -16,7 +16,7 @@ class DataFrameHandler:
     def filter_data(self, condition):
         if self.data is not None:
             try:
-                filtered_data = self.data[condition].copy()
+                filtered_data = self.data[condition]
                 print("Duomenys sėkmingai sufiltravę:")
                 print(filtered_data)
                 return filtered_data

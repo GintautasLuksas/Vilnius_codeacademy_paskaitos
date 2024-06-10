@@ -5,7 +5,6 @@
 #2.4 Implementuokite metodą decompress(zip_file, output_dir),
 # kad ištrauktumėte ZIP failo turinį.
 
-
 import zipfile
 import os
 
@@ -21,10 +20,13 @@ class FileCompressor:
         with zipfile.ZipFile(zip_file, 'r') as zipf:
             zipf.extractall(output_dir)
 
+    @staticmethod
+    def print_info(zip_file):
+        with zipfile.ZipFile(zip_file) as file:
+            print(file.infolist())
 
-FileCompressor.compress(["file1.txt", "file2.txt"], "compressed.zip")
-
-
-FileCompressor.decompress("compressed.zip", 'C:/Users/BossJore/PycharmProjects/Vilnius_codeacademy_paskaitos/src/06.06')
+#FileCompressor.compress(["file1.txt", "file2.txt"], "compressed.zip")
+#FileCompressor.decompress("compressed.zip", 'C:/Users/')
+FileCompressor.print_info('compressed.zip')
 
 
