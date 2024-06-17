@@ -1,0 +1,26 @@
+1. Įkelkite CSV failą į pandas DataFrame.
+2. Parodykite pirmąsias 5 DataFrame eilutes, 10 DataFrame eilučių.
+3. Parodykite paskutines 5 DataFrame eilutes, 10 DataFrame eilučių.
+4. Atspausdinkite informaciją apie DataFrame.
+5. Išrinkite stulpelius "Name" (vardas) ir "City" (miestas).
+6. Išrinkite eilutes, kuriose " Age" yra didesnis nei 30 metų.
+7. Išrinkite eilutes, kuriose "'City" yra "San Francisco" ir "Salary" yra didesnis nei 80000
+8. Pridėkite naują stulpelį " Bonus", kuris yra 10 % " Salary" ("Atlyginimas") 
+9. Pervadinkite stulpelį " Bonus" į "EmployeeBonus".
+10. Pašalinkite stulpelį "EmployeeBonus".
+11. Rūšiuokite duomenų rėmelį pagal "Age" mažėjančia tvarka
+12. Sugrupuokite DataFrame pagal "City" ir apskaičiuokite "Salary" vidurkį
+13. Sugrupuokite DataFrame pagal " Department" ir gaukite kiekvienos grupės dydį
+14. Raskite didžiausią "Salary" kiekviename "City" (mieste)
+15. Raskite mažiausią "Age" kiekviename "Department".
+16. Suskaičiuokite darbuotojų skaičių kiekviename "City".
+17. Užpildykite trūkstamas reikšmes duomenų rėmelyje (jei tokių yra) reikšme "Unknown".
+18. Išsaugokite DataFrame į naują CSV failą, pavadintą "employees_updated.csv".
+19. Filtruokite DataFrame, kad būtų rodomi tik "Engineering" skyriaus darbuotojai
+
+
+20. Normalizuokite stulpelį "Salary" naudodami Min-Max skalę ir pridėkite jį kaip naują stulpelį Normalized_Salary:
+21. Sukurkite naują DataFrame, kuriame būtų rodomi daugiausiai uždirbantys kiekvieno skyriaus darbuotojai
+22. Nustatykite koreliaciją tarp "Age" ir "Salary".
+23. Sukurkite naują stulpelį Age_Group, skirstantį darbuotojus į "Jaunus" (<30), "Vidutinio amžiaus" (30-40) ir "Vyresnius" (>40):
+24. Kiekvienam skyriui apskaičiuokite skirtumą tarp kiekvieno darbuotojo darbo užmokesčio ir skyriaus vidutinio darbo užmokesčio

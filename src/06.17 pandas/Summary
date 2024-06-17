@@ -1,0 +1,29 @@
+
+
+1. **Loading Data**: Reading data from CSV files using `pd.read_csv()` and initializing DataFrames.
+   
+2. **Viewing Data**: Displaying DataFrame contents using `print()` or directly outputting the DataFrame.
+
+3. **Selecting Columns**: Accessing specific columns using DataFrame indexing
+(`df['Column']`) or by using list-like notation (`df[['Column1', 'Column2']]`).
+
+4. **Filtering Data**: Filtering rows based on conditions using boolean indexing
+(`df[df['Condition']]`) or methods like `df.loc[]` and `df.query()`.
+
+5. **Adding and Renaming Columns**: Adding new columns
+(`df['New_Column'] = ...`) and renaming columns (`df.rename()` or direct assignment).
+
+6. **Computing Statistics**: Calculating descriptive statistics such as mean, median, and correlations using methods like
+`df.mean()`, `df.median()`, and `df.corr()`.
+
+7. **Grouping and Aggregating Data**: Grouping data using
+`df.groupby()` and applying aggregate functions like `mean()`, `sum()`, etc., to grouped data.
+
+8. **Handling Missing Data**: Checking for missing values
+(`df.isnull()`), replacing them (`df.fillna()`), or dropping rows/columns (`df.dropna()`).
+
+9. **Writing Data**: Saving DataFrame back to CSV using `df.to_csv()`.
+
+10. **Calculating Derived Columns**: Creating new columns based on calculations involving existing columns
+(`df['New_Column'] = ...`).
+
