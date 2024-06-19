@@ -88,35 +88,35 @@ print(df['Age'].corr(df['Salary']))
 
 
 # # 23. Sukurkite naują stulpelį Age_Group, skirstantį darbuotojus į "Jaunus" (<30), "Vidutinio amžiaus" (30-40) ir "Vyresnius" (>40):
-# def age_category(age):
-#     if age < 30:
-#         return 'Jaunas'
-#     elif age == 30 or age < 40:
-#         return 'Vidutinio amziaus'
-#     elif age > 40:
-#         return 'Vyersnis'
-#
-#
-# df['Age_Group'] = df['Age'].apply(age_category)
-# # print(df)
+def age_category(age):
+    if age < 30:
+        return 'Jaunas'
+    elif age == 30 or age < 40:
+        return 'Vidutinio amziaus'
+    elif age > 40:
+        return 'Vyersnis'
+
+
+df['Age_Group'] = df['Age'].apply(age_category)
+print(df)
 #
 # # 24. Kiekvienam skyriui apskaičiuokite skirtumą tarp kiekvieno darbuotojo darbo užmokesčio ir skyriaus vidutinio darbo užmokesčio
-# df_engineering = df[df['Department'] == 'Engineering']
-# df_engineering_avg = df_engineering['Salary'].mean()
-# df_engineering['Avg_diff'] = df_engineering['Salary'] - df_engineering_avg
-# print(df_engineering)
-#
-#
-# df_HR = df[df['Department'] == 'HR']
-# df_HR_avg = df_HR['Salary'].mean()
-# df_HR['Avg_diff'] = df_HR['Salary'] - df_HR_avg
-# print(df_HR)
-#
-#
-# df_Marketing = df[df['Department'] == 'Marketing']
-# df_Marketing_avg = df_Marketing['Salary'].mean()
-# df_Marketing['Avg_diff'] = df_Marketing['Salary'] - df_Marketing_avg
-# print(df_Marketing)
+df_engineering = df[df['Department'] == 'Engineering']
+df_engineering_avg = df_engineering['Salary'].mean()
+df_engineering['Avg_diff'] = df_engineering['Salary'] - df_engineering_avg
+print(df_engineering)
+
+
+df_HR = df[df['Department'] == 'HR']
+df_HR_avg = df_HR['Salary'].mean()
+df_HR['Avg_diff'] = df_HR['Salary'] - df_HR_avg
+print(df_HR)
+
+
+df_Marketing = df[df['Department'] == 'Marketing']
+df_Marketing_avg = df_Marketing['Salary'].mean()
+df_Marketing['Avg_diff'] = df_Marketing['Salary'] - df_Marketing_avg
+print(df_Marketing)
 #
 # # Calculate average salary for each department
 # department_avg_salary = df.groupby('Department')['Salary'].transform('mean')
