@@ -16,12 +16,12 @@ def time_to_minutes(time_str):
     return total_minutes
 
 def extract_number(text):
-    # Use regular expression to extract numbers
-    numbers = re.findall(r'\d+', text)
-    if numbers:
-        return int(numbers[0])  # Convert the first number found to an integer
+    # Use regular expression to extract only digits
+    number = re.search(r'\d+', text)
+    if number:
+        return int(number.group())  # Convert the matched number to an integer
     else:
-        return 0  # Return 0 if no numbers found
+        return 0  # Return 0 if no digits found
 
 driver_service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=driver_service)
@@ -29,33 +29,42 @@ driver = webdriver.Chrome(service=driver_service)
 url = 'https://www.imdb.com/chart/moviemeter/?ref_=nv_mv_mpm'
 driver.get(url)
 
+# Find all movie elements
 movie_titles = driver.find_elements(By.XPATH, '//*[@id="__next"]/main/div/div[3]/section/div/div[2]/div/ul/li/div[2]/div/div/div[2]/a/h3')
 movie_years = driver.find_elements(By.XPATH, '//*[@id="__next"]/main/div/div[3]/section/div/div[2]/div/ul/li/div[2]/div/div/div[3]/span[1]')
-movie_rates = driver.find_elements(By.XPATH, '//*[@id="__next"]/main/div/div[3]/section/div/div[2]/div/ul/li/div[2]/div/div/span/div/span')
+movie_rates_and_amounts = driver.find_elements(By.XPATH, '//*[@id="__next"]/main/div/div[3]/section/div/div[2]/div/ul/li/div[2]/div/div/span/div/span')
 movie_lengths = driver.find_elements(By.XPATH, '//*[@id="__next"]/main/div/div[3]/section/div/div[2]/div/ul/li/div[2]/div/div/div[3]/span[2]')
-movie_rate_amounts = driver.find_elements(By.XPATH, '//*[@id="__next"]/main/div/div[3]/section/div/div[2]/div/ul/li/div[2]/div/div/span/div/span/span')
 
-min_length = min(len(movie_titles), len(movie_years), len(movie_rates), len(movie_lengths), len(movie_rate_amounts))
+# Ensure lengths match
+min_length = min(len(movie_titles), len(movie_years), len(movie_rates_and_amounts), len(movie_lengths))
 
 data = []
 for i in range(min_length):
     title = movie_titles[i].text
     year = movie_years[i].text
-    rate = movie_rates[i].text
-    length = time_to_minutes(movie_lengths[i].text)
 
-    # Extract just the number from rate_amount_text
-    rate_amount_text = movie_rate_amounts[i].text.strip()
+    # Extract rate (rating value)
+    rate_text = movie_rates_and_amounts[i].text.strip().split()[0]
+    rate = float(rate_text) if rate_text else 0.0
+
+    # Extract rate amount
+    rate_amount_text = movie_rates_and_amounts[i].text.strip()
     rate_amount = extract_number(rate_amount_text)
 
-    data.append([title, year, rate, length, rate_amount])
+    # Extract length if available
+    if i < len(movie_lengths):
+        length = time_to_minutes(movie_lengths[i].text)
+    else:
+        length = 0  # Set default value if length element is not found
+
+    data.append([title, year, rate, rate_amount, length])
 
 driver.quit()
 
 csv_filename = 'imdb_movies.csv'
 with open(csv_filename, 'w', newline='', encoding='utf-8-sig') as csvfile:
     csvwriter = csv.writer(csvfile)
-    csvwriter.writerow(['Title', 'Year', 'Rating', 'Duration (minutes)', 'Rating Amount'])
+    csvwriter.writerow(['Title', 'Year', 'Rating', 'Rating Amount', 'Duration (minutes)'])
     csvwriter.writerows(data)
 
 print(f"IMDb movie data saved to {csv_filename}")
