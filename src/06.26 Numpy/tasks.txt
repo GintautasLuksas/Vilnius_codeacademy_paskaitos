@@ -1,0 +1,41 @@
+1. Sukurti ir spausdinti masyvus
+	1.1 Sukurkite 1D NumPy masyvą su reikšmėmis nuo 1 iki 10 ir jį atspausdinkite.
+	1.2 Sukurkite 2D NumPy masyvą, kurio forma (3, 3) užpildyta reikšme 7, ir jį išspausdinkite.
+
+2. Pagrindinės aritmetinės operacijos
+	2.1 Sukurkite du 1D masyvus su reikšmėmis nuo 1 iki 5. Sudėkite, atimkite, padauginkite ir padalykite elementus iš 2.
+
+3. Masyvo indeksavimas ir pjaustymas
+	3.1 Sukurkite 1D masyvą su reikšmėmis nuo 10 iki 20. Išspausdinkite pirmuosius 5 elementus ir paskutinius 5 elementus.
+
+4. Masyvo pertvarkymas
+	4.1 Sukurkite 1D masyvą su 12 elementų ir pertvarkykite jį į 2D masyvą, kurio forma (3, 4).
+
+5. Masyvų generavimas naudojant integruotas funkcijas
+	5.1 Naudodami linspace sukurkite 10 tolygiai išdėstytų reikšmių nuo 0 iki 1 masyvą.
+	5.2 Sukurkite 1D masyvą su reikšmėmis nuo 1 iki 10. Apskaičiuokite ir išspausdinkite sumą, vidurkį ir standartinį nuokrypį.
+	
+6. Operacijos su matricomis
+	6.1 Sukurkite dvi 2D formos (3, 3) matricas. Atlikite matricų sudėties, atimties ir matricų daugybos veiksmus.
+	6.2 Sukurkite 1D matricą su reikšmėmis [0, π/2, π, 3π/2, 2π]. Apskaičiuokite šių reikšmių sinusą ir kosinusą.
+	
+7. Statistinės funkcijos
+	7.1 Sukurkite 100 dydžio 1D masyvą su atsitiktinėmis reikšmėmis nuo 0 iki 1. Apskaičiuokite medianą ir dispersiją.
+	
+8. Atsitiktinių skaičių generavimas
+	8.1 Sukurkite 3x3 masyvą su atsitiktiniais sveikaisiais skaičiais nuo 1 iki 10.
+
+9. Loginis indeksavimas
+	9.1 Sukurkite 1D masyvą su reikšmėmis nuo 1 iki 10. Išskirkite visus lyginius skaičius naudodami loginį indeksavimą.
+	
+10. Masyvų rūšiavimas
+	10.1 Sukurkite 1D masyvą su 10 atsitiktinių sveikųjų skaičių nuo 0 iki 50. Surūšiuokite masyvą didėjančia tvarka.
+	
+11. Tiesinės algebros operacijos
+	11.1 Sukurkite 2D formos (2, 2) masyvą A ir kitą 2D formos (2, 2) masyvą B. Apskaičiuokite A ir B sandaugą ir A matricos determinantą.
+	
+12. Išplėstinis indeksavimas
+	12.1 Sukurkite 4x4 masyvą ir naudodami išplėstinį indeksavimą įstrižainės elementams nustatykite reikšmę 1.
+	
+13. Tikimybių skaičiavimas
+	13.1 Naudodami "NumPy" imituokite dviejų šešiabriaunių kauliukų metimo procesą 1000 kartų. Apskaičiuokite tikimybę, kad metant bus gauta suma 7.
