@@ -72,9 +72,9 @@ import random
 
 
 #7
-# arr = np.random.randint(0, 2, 100)
-# median = np.median(arr)
-# variance = np.var(arr)
+arr = np.random.randint(0, 2, 100)
+median = np.median(arr)
+variance = np.var(arr)
 #
 # print(arr)
 # print(median)
@@ -88,3 +88,47 @@ print(arr2)
 
 # 9. Loginis indeksavimas
 # 	9.1 Sukurkite 1D masyvą su reikšmėmis nuo 1 iki 10. Išskirkite visus lyginius skaičius naudodami loginį indeksavimą.
+# arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+# even_numbers = arr[arr % 2 == 0]
+# print("Lyginiai skaičiai", even_numbers)
+
+# 10. Masyvų rūšiavimas
+# 	10.1 Sukurkite 1D masyvą su 10 atsitiktinių sveikųjų skaičių nuo 0 iki 50. Surūšiuokite masyvą didėjančia tvarka.
+arr = np.random.randint(0, 50, 10)
+didit = np.sort(arr)
+print(didit)
+
+# 11. Tiesinės algebros operacijos
+# 	11.1 Sukurkite 2D formos (2, 2) masyvą A ir kitą 2D formos (2, 2) masyvą B. Apskaičiuokite A ir B sandaugą ir A matricos determinantą.
+A = np.array([[2, 4], [3, 5]])
+B = np.array([[4, 5], [1, 3]])
+
+SUMA = np.sum(A)
+SUMB = np.sum(B)
+print(SUMA * SUMB)
+
+determinantas_A = np.linalg.det(A)
+
+print("Matricos A determinantas:", determinantas_A)
+
+#12. Išplėstinis indeksavimas
+	#12.1 Sukurkite 4x4 masyvą ir naudodami išplėstinį indeksavimą įstrižainės elementams nustatykite reikšmę 1.
+arr = np.random.randint(0, 15, (4, 4))
+arr[np.diag_indices(4)] = 1
+
+# 13. Tikimybių skaičiavimas
+# 	13.1 Naudodami "NumPy" imituokite dviejų šešiabriaunių kauliukų metimo procesą 1000 kartų. Apskaičiuokite tikimybę, kad metant bus gauta suma 7.
+import numpy as np
+
+num_rolls = 1000
+
+dice1 = np.random.randint(1, 7, num_rolls)
+dice2 = np.random.randint(1, 7, num_rolls)
+
+sums = dice1 + dice2
+count_sum_7 = np.count_nonzero(sums == 7)
+probability_sum_7 = count_sum_7 / num_rolls
+
+print(f"Probability of getting a sum of 7: {probability_sum_7:.4f}")
+
+
