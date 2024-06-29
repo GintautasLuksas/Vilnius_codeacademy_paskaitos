@@ -24,8 +24,6 @@ if uploaded_file is not None:
     st.write(df)
 
 #3
-import streamlit as st
-import pandas as pd
 
 # Įkelti CSV failą
 uploaded_file = st.file_uploader("Įkelkite CSV failą", type=["csv"])
