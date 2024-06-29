@@ -1,0 +1,7 @@
+1. Sukurkite "Streamlit" programėlę, kurioje būtų rodomas užrašas "Hello, World!" su antrašte ir paantrašte.
+2. Sukurkite "Streamlit" programą, kuri įkelia CSV failą ir rodo duomenų lentelę (DataFrame).
+3. Sukurkite programą, kuri įkelia CSV failą ir rodo apibendrintą statistiką (vidurkį, medianą, min, max) kiekvienam skaitiniam stulpeliui.
+4. Sukurkite programą, kuri įkelia CSV failą ir rodo dviejų pasirinktų skaitinių stulpelių linijinį grafiką.
+5. Sukurkite programą, kuri įkelia CSV failą ir rodo pasirinkto skaitinio stulpelio histogramą.
+6. Sukurkite programą, kuri įkelia CSV failą ir rodo skaičių stulpelių koreliacijos šilumos žemėlapį.
+7. Sukurkite programą, kuri įkelia CSV failą ir rodo pasirinkto skaitinio stulpelio, sugrupuoto pagal kito stulpelio kategorijas, dėžės diagramą.
