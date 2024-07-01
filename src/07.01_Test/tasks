@@ -1,0 +1,44 @@
+Užduotis 1: Parašykite funkciją is_palindrome(s), kuri tikrina, ar eilutė s yra palindromas.
+	Testai: Patikrinkite palindromines eilutes, nepalindromines eilutes ir tuščias eilutes.
+
+Užduotis 2: Parašykite funkciją max_of_three(a, b, c), kuri grąžina trijų skaičių maksimumą.
+	Testai: Atlikite testą su teigiamais skaičiais, neigiamais skaičiais ir teigiamų bei neigiamų skaičių mišiniu.
+
+Užduotis 3: Parašykite funkciją factorial(n), kuri grąžina nelyginio sveikojo skaičiaus n faktorialą.
+	Testai: Atlikite testą su nuliu, teigiamais sveikaisiais skaičiais ir kraštutiniais atvejais, pavyzdžiui kai, n = 1.
+
+Užduotis 4: Parašykite funkciją fibonacci(n), kuri grąžina n-ąjį Fibonačio skaičių.
+	Testai: Atlikite testą su mažomis n reikšmėmis, kraštutiniais atvejais, pavyzdžiui, n = 0, ir didelėmis n reikšmėmis.
+
+Užduotis 5: Parašykite funkciją reverse_string(s), kuri grąžina atvirkštinę eilutę s.
+	Testai: Atlikite bandymus su įprastomis eilutėmis, tuščiomis eilutėmis ir vienaženklėmis eilutėmis.
+
+Užduotis 6: Parašykite funkciją is_prime(n), kuri tikrina, ar skaičius n yra pirminis skaičius.
+	Testai: Patikrinkite pirminius ir nepirminius skaičius bei kraštinius atvejus, pavyzdžiui, n = 1.
+
+Užduotis 7: Parašykite funkciją gcd(a, b), kuri grąžina a ir b didžiausią bendrąjį daliklį.
+	Testai: Atlikite testą su koprimaisiais skaičiais, kai vienas skaičius yra nulis ir kai abu skaičiai yra lygūs.
+
+Užduotis 8: Parašykite funkciją merge_sorted_lists(list1, list2), kuri sujungia du surūšiuotus sąrašus į vieną surūšiuotą sąrašą.
+	Testai: Atlikite testą su dviem ne tuščiais sąrašais, vienu tuščiu sąrašu ir abiem tuščiais sąrašais.
+
+Užduotis 9: Parašykite funkciją count_vowels(s), kuri suskaičiuoja balsių skaičių eilutėje s.
+	Testai: išbandykite eilutes, kuriose yra balsių, nėra balsių bei su tuščia eilučie.
+
+Užduotis 10: Parašykite funkciją transpose_matrix(matrix), kuri grąžina 2D matricos transponavimą.
+	Testai: bandymas su kvadratinėmis, stačiakampėmis matricomis ir tuščiomis matricomis.
+
+Užduotis 11: Parašykite funkciją word_frequency(text), kuri grąžina žodyną su kiekvieno žodžio dažnumu duotame tekste.
+	Testai: Atlikite bandymus su tekstais, kuriuose visi žodžiai skirtingi, tekstais, kuriuose žodžiai kartojasi, ir tuščiu tekstu.
+
+Užduotis 12: Parašykite funkciją remove_duplicates(lst), kuri pašalina pasikartojančius elementus iš sąrašo, išlaikydama likusių elementų tvarką.
+	Testai: Atlikite bandymus su sąrašais, kuriuose yra dublikatų, kuriuose jų nėra, ir kraštutiniais atvejais, pavyzdžiui, tuščiais sąrašais.
+
+Užduotis 13: Parašykite funkciją common_elements(list1, list2), kuri grąžina sąrašą bendrų elementų.
+	Testai: Atlikite testus su sąrašais, turinčiais bendrų elementų, neturinčiais bendrų elementų ir kai vienas arba abu sąrašai yra tušti.
+
+Užduotis 14: Parašykite funkciją string_to_int(s), kuri konvertuoja skaitmenų eilutę į sveiką skaičių.
+	Testai: Atlikite testus su teigiamais skaičiais, neigiamais skaičiais ir negaliojančiomis eilutėmis (pvz., tuščiomis eilutėmis, eilutėmis, kuriose nėra skaitmenų).
+
+Užduotis 15: Parašykite funkciją find_missing_number(lst), kuri priima sveikųjų skaičių seką nuo 1 iki n, kurioje trūksta vieno skaičiaus, ir grąžina trūkstamą skaičių.
+	Testai: Atlikite bandymus su sąrašais, kuriuose trūksta skaičių, nėra pirmo arba paskutio skačiaus.
