@@ -1,6 +1,5 @@
-import shutil
 import pytest
-import os
+
 @pytest.fixture
 def operation_params():
     return 7, 9

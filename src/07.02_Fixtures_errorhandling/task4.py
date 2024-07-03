@@ -8,7 +8,13 @@ def add_element(lst, elem):
     return lst
 
 def unique_elements(lst):
-    return list(set(lst))
+    seen = set()
+    unique_list = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            unique_list.append(item)
+    return unique_list
 @pytest.fixture
 def list_fixture():
     return [10, 20, 20, 30, 40, 40, 50]
