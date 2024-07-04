@@ -35,3 +35,20 @@ Užduotis 8
 Užduotis 9
 	Funkcija: Sukurkite funkciją validate_age(age), kuri patikrina, ar amžius yra galiojančiame intervale (0-150 metų). Jei amžius nepatenka į šį intervalą, kelkite ValueError klaidą.
 	Testas: Parašykite testavimo funkciją test_validate_age_value_error(), kuri tikrina, ar validate_age teisingai sukelia ValueError, kai pateikiamas neteisingas amžius.
+
+
+Užduotis 10
+	Funkcija: Įgyvendinkite funkciją, kuri skaito iš failo ir apdoroja jo turinį. Iškelkite atitinkamas klaidas, jei failas nerastas.
+	Testai: Parašykite testus su fixture, kurie apima skaitymą iš esamo failo, skaitymą iš neegzistuojančio failo (kad būtų sukelta FileNotFoundError).
+
+Užduotis 11
+	Funkcija: Įgyvendinkite funkciją, kuri atlieka naudotojo autorizavimą. Iškelkite atitinkamas klaidas dėl negaliojančių prisijungimo duomenų.
+	Testai: Parašykite testus, naudodami fixtures, kad imituotumėte naudotojo prisijungimo duomenis ir išbandytumėte įvairius scenarijus, pavyzdžiui, sėkmingą autentifikavimą, autentifikavimo nesėkmes (neteisingas slaptažodis) ir paskyros blokavimo situacijas.
+
+Užduotis 12
+	Funkcija: Funkcija: Įgyvendinkite funkciją, kuri patikrina įvesties duomenis pagal nurodytus kriterijus. Kelkite klaidas dėl netinkamų duomenų formatų ar reikšmių.
+	Testai: Naudokite fixtures, kad pateiktumėte įvesties duomenų pavyzdžius. Implementuokite 3 skirtingus testavimo scenarijus.
+
+Užduotis 13
+	Funkcijos: Parašykite funkcijas kuriuose apsakaičiuojami: faktorialas, kvadratinė šaknis. Taip pat, juose tiro būti apdorojami kraštutiniai atvejai, pvz., neigiami skaičiai arba nulinės reikšmės.
+	Testai: Parašykite testus, kuriuose būtų numatyti skirtingi kiekvienos funkcijos kraštutiniai atvejai, užtikrinant teisingus rezultatus, naudokite fixtures.
