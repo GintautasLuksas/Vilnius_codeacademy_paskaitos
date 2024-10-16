@@ -1,0 +1,23 @@
+Užduotis 1: Klasifikuoti, ar navikas yra gerybinis ar piktybinis.
+Sukurkite sprendimo medį naudodami Gini ir entropiją.
+Palyginkite tikslumo rezultatus ir sukurkite klsifikavimo matricas. Vizualizuokite sprendimo medį ir aptarkite svarbiausius kintamuosius.
+Duomenų rinkinys: Naudokite sklearn.datasets.load_breast_cancer().
+
+Užduotis 2: Klasifikuoti ranka rašytą skaitmenį nuo 0 iki 9.
+Sukurkite sprendimo medį su Gini ir entropija.
+Palyginkite modelių tikslumą ir kryžminio patikrinimo rezultatus. Vizualizuokite sprendimo medį.
+Duomenų rinkinys: Naudokite sklearn.datasets.load_digits().
+
+Užduotis 3: Klasifikuoti vyną į tris rūšis pagal cheminius rodiklius.
+Sukurkite sprendimo medį su Gini indeksu ir entropija.
+Palyginkite modelių tikslumą, naudodami kryžminį patikrinimą.
+Vizualizuokite sprendimo medį ir analizuokite kintamųjų svarbą.
+Duomenų rinkinys: Naudokite sklearn.datasets.load_wine().
+
+------------------------------------------------------------------------------------------------------
+
+Užduotis *: Klasifikuoti naujienų straipsnius į vieną iš 20 kategorijų (pvz., sportas, mokslas, politika).
+Sukurkite sprendimo medį su Gini indeksu ir entropija.
+Palyginkite modelių tikslumą ir kryžminį patikrinimą.
+Vizualizuokite sprendimo medį ir aptarkite svarbiausius žodžius klasifikacijai.
+Duomenų rinkinys: Naudokite sklearn.datasets.fetch_20newsgroups().

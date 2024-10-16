@@ -1,0 +1,15 @@
+Užduotis 1:
+Sugeneruokite duomenų rinkinį, kuriame santykis tarp
+𝑥 ir  𝑦 atitinka kubinę priklausomybę (pvz. y=ax3+bx2+cx+d su triukšmu). Pritaikykite 3 laipsnio polinominės regresijos modelį šiems duomenims ir vizualizuokite rezultatą.
+
+Užduotis 2:
+Pritaikyti ant 1 užd. sukurtų duomenų tiesinę regresiją. Apskaičiuokite MSE koeficientus ir palyginkite rezultatus.
+
+Užduotis 3:
+Naudodami tikrus duomenis (pvz., iš sklearn bibliotekos, tokius kaip „California housing“ ar „diabetes dataset“), nustatykite, ar polinominė regresija geriau pritaiko duomenis nei linijinė regresija. Eksperimentuokite su polinominės regresijos laipsniais 2, 3 ir 4.
+
+from sklearn.datasets import fetch_california_housing
+california = fetch_california_housing()
+X = california.data[:, 0:1]
+y = california.target  # Housing prices
+print(X, y)

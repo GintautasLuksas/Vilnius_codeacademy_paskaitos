@@ -1,0 +1,51 @@
+Užduotis 1
+Sukurkite modelį, kuris nuspės, ar klientas pirks produktą, remdamasis tokiomis savybėmis kaip amžius, pajamos, lytis, ir internetinių parduotuvių naršymo laikas.
+Kintamieji: Amžius, Pajamos, Lytis (0 = moteris, 1 = vyras), Naršymo laikas (minutės).
+Tikslas (Y): Nustatyti ar klientas pirks produktą? (0 = ne, 1 = taip).
+
+data = {
+    'Amzius': [25, 40, 35, 50, 23, 45, 30, 31, 34, 40, 28, 37, 24, 29, 55, 42],
+    'Pajamos': [30000, 50000, 45000, 60000, 28000, 58000, 35000, 36000, 40000, 52000, 33000, 49000, 31000, 42000, 70000, 48000],
+    'Lytis': [1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0],
+    'Narsymo_laikas': [30, 80, 55, 120, 20, 90, 45, 50, 40, 100, 35, 70, 25, 60, 130, 75],
+    'Pirko': [0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1]
+}
+
+
+Užduotis 2
+Nuspėkite, ar studentas išlaikys egzaminą, remdamiesi jų mokymosi valandomis, vidurkiu ir dalyvavimo lygmeniu.
+Kintamieji: Mokymosi valandos, Pažymių vidurkis, Dalyvavimas (%).
+Tikslas (Y): Ar išlaikys? (0 = ne, 1 = taip).
+
+data = {
+    'Mokymosi_valandos': [10, 5, 12, 8, 15, 4, 6, 11, 7, 9, 14, 3, 2, 13, 8, 10],
+    'Pazymiu_vidurkis': [6.5, 4.0, 7.5, 6.0, 8.0, 3.5, 5.5, 7.0, 5.0, 6.5, 8.5, 2.0, 4.5, 7.5, 6.0, 7.0],
+    'Dalyvavimas': [80, 60, 90, 70, 95, 50, 65, 85, 75, 80, 92, 40, 30, 88, 70, 80],
+    'Islaikes': [1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1]
+}
+
+Užduotis 3
+Nuspėkite, ar darbuotojas liks įmonėje, remdamiesi amžiumi, darbo patirtimi, atlyginimu ir pasitenkinimo darbu lygiu.
+Kintamieji: Amžius, Darbo patirtis (metai), Atlyginimas, Pasitenkinimas darbu (0-10).
+Tikslas (Y): Ar liks įmonėje? (0 = ne, 1 = taip).
+
+data = {
+    'age': [25, 40, 35, 50, 23, 45, 30, 31, 34, 40, 28, 37, 24, 29, 55, 42],
+    'salary': [30000, 50000, 45000, 60000, 28000, 58000, 35000, 36000, 40000, 52000,
+               33000, 49000, 31000, 42000, 70000, 48000],
+    'satisfaction': [7, 9, 6, 5, 4, 6, 7, 1, 9, 4, 1, 8, 9, 6, 5, 7],
+    'experience': [30, 28, 55, 12, 20, 30, 45, 38, 40, 10, 35, 37, 25, 41, 13, 25],
+    'is_loyal': [0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1]
+}
+
+Užduotis 4
+Nuspėkite, ar darbuotojas gaus paaukštinimą, remdamiesi jų darbo patirtimi, rezultatų vertinimais ir darbo užduočių sudėtingumu.
+Kintamieji: Darbo patirtis (metai), Rezultatų vertinimas (0-10), Užduočių sudėtingumas (0-10).
+Tikslas (Y): Ar gaus paaukštinimą? (0 = ne, 1 = taip).
+
+data = {
+    'Darbo_patarptis': [5, 3, 10, 7, 15, 8, 2, 6, 4, 12, 11, 9, 1, 13, 14, 0],
+    'Rezultatu_vertinimas': [8, 6, 9, 7, 10, 6, 5, 8, 4, 9, 7, 6, 3, 8, 10, 4],
+    'Uzdaviniu_sudetingumas': [7, 5, 9, 6, 10, 4, 3, 8, 2, 9, 7, 5, 1, 8, 10, 2],
+    'Paaukstintas': [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0]
+}

@@ -1,0 +1,19 @@
+Užduotis 1:
+	Implementuokite paskaitoje pristatytą užduoti nenaudojant sklearn bibliotekos (formulės skaidrėse).
+	Apsakičiokite beta reikšmes ir paklaidą. Ar gautas rezultatas sutampa su gautu naudojant sklearn?
+
+Užduotis 2:
+	Jums pateiktas duomenų rinkinys, kuriame yra namų dydžiai (kvadratiniais metrais) ir jų atitinkamos kainos (tūkstančiais eurų).
+	Dydis Kaina
+	50	150
+	80	220
+	120	320
+	160	410
+	200	480
+	2.1 Nubraižykite duomenų taškus (namų dydis vs. kaina) grafike.
+	2.2 Atlikite tiesinę regresiją, kad rastumėte geriausiai tinkančią tiesę, kuri prognozuotų namų kainas pagal jų dydį.
+	2.3 Naudodamiesi modeliu, prognozuokite 150 kvadratinių metrų namo kainą.
+	2.4 Įvertinkite modelį, apskaičiuodami vidutinę kvadratinę klaidą (MSE) tarp prognozuotų ir faktinių kainų.
+
+Užduotis 3:
+	Raskite duomenų internete ant kurių atlikite tiesinę regresiją :)

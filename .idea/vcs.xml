@@ -2,8 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/05.09 gintautas_practice-git-commands" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/05.13 test" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/05.22" vcs="Git" />
   </component>
 </project>

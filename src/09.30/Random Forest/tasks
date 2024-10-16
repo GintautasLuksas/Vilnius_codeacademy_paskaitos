@@ -1,0 +1,17 @@
+1. Nuspėkite, ar keleivis išgyveno Titaniko katastrofą (Titaniko duomenų rinkinys)
+Kintamieji: Keleivio amžius, lytis, klasė, bilieto kaina.
+Tikslas: Nuspėti, ar keleivis išgyveno.
+Užd: Sukurkite sprendimo medį naudodami Gini indeksą ir entropiją. Palyginkite abiejų modelių tikslumą. Vizualizuokite sprendimo medžius.
+Duomenų rinkinys: Naudokite "titanic.csv" (populiarus duomenų rinkinys iš Kaggle).
+
+2. Klasifikuokite gėlių rūšis (Iris duomenų rinkinys)
+Kintamieji: Taurėlapių ilgis, taurėlapių plotis, vainiklapių ilgis ir plotis.
+Tikslas: Klasifikuoti gėlių rūšis (setosa, versicolor, virginica).
+Užd: Sukurkite sprendimo medį su Gini indeksu ir entropija. Palyginkite klasifikacijos tikslumą. Vizualizuokite medžius.
+Duomenų rinkinys: Galima rasti sklearn.datasets bibliotekoje.
+
+3. Nuspėkite diabeto diagnozę
+Kintamieji: Amžius, kūno masės indeksas (BMI), kraujospūdis, insulino lygis.
+Tikslas: Nuspėti, ar asmuo serga diabetu.
+Užd: sukurkite sprendimo medį naudodami Gini indeksą ir entropiją. Palyginkite modelio tikslumą. Vizualizuokite sprendimo medžius.
+Duomenų rinkinys: Diabetes Kaggle.
