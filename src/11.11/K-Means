@@ -1,0 +1,25 @@
+
+Duomenų paruošimas:
+
+Turimus duomenis būtina standartizuoti, kad visi atributai turėtų panašius mastelius ir neiškraipytų klasterizacijos rezultatų.
+Optimalus klasterių skaičiaus nustatymas:
+
+Elbow (alkūnės) metodas naudojamas norint rasti geriausią klasterių skaičių
+𝐾
+K. Skaičiuojama WCSS reikšmė skirtingoms
+𝐾
+K reikšmėms, o tada stebima diagrama, kur „alkūnės“ taškas parodo optimalų klasterių skaičių.
+K-Means taikymas:
+
+Naudojant optimalų
+𝐾
+K, nustatytą su alkūnės metodu, duomenys klasterizuojami.
+Klasterizacijos kokybės įvertinimas:
+
+Silueto koeficientas gali būti naudojamas kaip papildoma priemonė patikrinti klasterizacijos kokybę. Jis įvertina, kaip gerai kiekvienas taškas yra priskirtas savo klasteriui, lyginant su kitais klasteriais.
+Silueto koeficiento reikšmė:
+Artima 1: taškas yra gerai priskirtas savo klasteriui.
+Artima 0: taškas yra ant dviejų klasterių ribos.
+Artima -1: taškas priskirtas netinkamam klasteriui.
+Patvirtinimas:
+Taip, standartizavimas, WCSS skaičiavimas ir alkūnės metodo taikymas, o vėliau klasterizacijos kokybės įvertinimas naudojant silueto koeficientą yra pagrindiniai žingsniai dirbant su K-Means.
